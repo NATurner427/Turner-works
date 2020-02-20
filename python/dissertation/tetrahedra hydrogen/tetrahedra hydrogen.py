@@ -6,7 +6,7 @@
 
 import math
 
-#constants the angle to rotate to, its inverse, and the length of the hydrogen
+#constants: the angle to rotate to, its inverse, and the length of the hydrogen
 t=2.186
 u=-2.186
 hlen=.9053
