@@ -1,3 +1,19 @@
+# 3.06.20
+
+## PERS
+
+Another productive week. I finished my first project, the EDA of 2015 flights. I cleaned, analyzed plotted and exported data and figures. Continued to go to the gym 5 times again. Started counting calories and got my mom to do the same. I haven't heard back from Sue except to tell me she hasn't had time to look at my comments yet so thats still on the back burner. Instead of finishing my DISS project, I started my 2nd stepping stone project. I also took time reviewing linear regressions doing a couple datasets on pancreatic cancer and Boston real estate provided by kaggle and scikit learn respecitvely. Doing the linear regressions included doing train test splints both manually and via the scikit method, doing some feature selection, ridge regression, correlation maps, and coefficent results. 
+
+## AERO
+
+#DONE!
+
+##CARV
+
+ For my second project I wanted to use some webscraping to get my dataset instead of using prepackaged kaggle data like AERO. I used selenium to automate a chrome browser to access a website. I initially wanted to analyze Ricart, the largest car dealership in central Ohio. However there Robots.txt file disallowed any access, so my second choice was Carvana. Carvana is a company that allows you to shop online for a used car and the company will bring the car to you. My father used it to get his most recent car. I had selenium access the html tag that contained each cars info; year, brand, make, trim, milage, price, and shipping costs. I used beautiful soup to extract that info from the tag and put that info into a csv file. The selenium test had to work through 1700 pages of 20 cars each, and I ended up with about 34k rows of car info.
+
+The data was stored in the original csv as strings that were split into the relevant columns. I went through and cut out the text characters and converted the remaing numerical string into integers. I chopped off the car brands that I had less than 100 entries. I made categorical columns that identify the rows brand via a 1 in the relavent column and 0 in the rest. Then finally I recognized that the rows were repeating themselves. It seems Carvana artificially inflated their stated 34k inventory. I've sometimes noticed that with search querys repeating results. I used the *very* convenient pandas method .duplicated to find all the duplicate rows and then used ~ to negate it. Shockingly that chopped out 25k results!! And I was not lax with the .duplicated method making a row get flagged only if all the column values pulled from Carvana matched. That 8k remaining rows is not a lot of data to work with especially if its split up by brand, I may not have the chance to do that and will have to go without the brand cateogrical information.    
+
 # 2.28.20 - weekly friday night update
 
 ## PERS
