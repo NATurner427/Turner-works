@@ -6,9 +6,9 @@ Another productive week. I finished my first project, the EDA of 2015 flights. I
 
 ## AERO
 
-#DONE!
+DONE!
 
-##CARV
+## CARV
 
  For my second project I wanted to use some webscraping to get my dataset instead of using prepackaged kaggle data like AERO. I used selenium to automate a chrome browser to access a website. I initially wanted to analyze Ricart, the largest car dealership in central Ohio. However there Robots.txt file disallowed any access, so my second choice was Carvana. Carvana is a company that allows you to shop online for a used car and the company will bring the car to you. My father used it to get his most recent car. I had selenium access the html tag that contained each cars info; year, brand, make, trim, milage, price, and shipping costs. I used beautiful soup to extract that info from the tag and put that info into a csv file. The selenium test had to work through 1700 pages of 20 cars each, and I ended up with about 34k rows of car info.
 
