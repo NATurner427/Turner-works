@@ -5,7 +5,11 @@ Statistical or econometric theory
 Large-scale optimization
 
 natural language processing
-
+Tableau
+Hadoop
+Ab Initio
+Enterprise data warehouse
+DevOps
 
 pybaseball
 baseball savant

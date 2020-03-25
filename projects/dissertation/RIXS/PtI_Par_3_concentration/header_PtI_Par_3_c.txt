@@ -1,0 +1,35 @@
+#F PtI_Par_3_Concentration
+#E 1498941743
+#D Sat Jul 01 13:42:23 2017
+#C spec  User = SSRL\b_user62
+#O0   dummy0      mono     emiss    filter    I0gain    I1gain    m0topj    m0botj
+#O1   m0sslj    m0sprj    m0vert   m0pitch    m0bend    girder   montopj   monbotj
+#O2  monapit   monarol   monbpit   monbrol    m1vert   m1pitch     m1yaw    m1bend
+#O3  hutshut    m2elev     beamp     table      thor      vert       Ax1       Ax2
+#O4      Ax3       Ax4       Ax5       Ax6       Ax7        Tz        Dz        Az
+#O5       Sx        Sy        Sz        Bx     jjbot     jjtop    jjssrl   jjspear
+#O6   jjhgap   jjhtran    jjvgap   jjvtran      Gthy        Gy      Gthx        Gx
+#O7       Er        Sr       Eth      Echi        Bz        Tx        Px        Pz
+#O8      c7t       c7y       c7p       c6t       c6y       c6p       c5t       c5y
+#O9      c5p       c4t       c4y       c4p       c3t       c3y       c3p       c2t
+#O10      c2y       c2p       c1t       c1y       c1p    dummy1
+#S 1  loopscan 5 3 0
+#D Sat Jul 01 13:42:45 2017
+#T 3  (Seconds)
+#G0 0
+#G1 0
+#G3 0
+#G4 0
+#Q
+#P0 0.9 11704.998 11563.503 0 7 5 1.3017526 1.498603
+#P1 3.498603 3.4986025 0.76993721 3.6999969 -8.199745 45.900067 1.4983998 1.7526035
+#P2 174466 -35005 45020 12438 -3.320255 -4.6300326 -0.057150114 1.3500101
+#P3 63.000049 59.400084 81.000151 89.46 14.25 92.4825 935.41 935.41
+#P4 935.41 935.41 935.41 935.41 935.41 -1.8363265 -491.6 -245.80132
+#P5 -0.238 2.53225 12.76 47 8.255 9.755 10 10
+#P6 20 0 18.01 0.75 17.663812 0 -0.07859375 0
+#P7 10.7 -90 -1.05 2.0545 21.44 0.88412698 2.5 -1
+#P8 -0.515689 0.307546 -2.80637 0.0674377 -0.27375108 -3.7559447 -0.875728 0.042198523
+#P9 -1.4853328 -5.16876 -0.7186528 -0.86812799 0.068802 0.39879697 -0.33073904 0.318833
+#P10 -0.46893215 -0.85287258 -1.07516 0.186128 -0.21995526 50
+#N 18
