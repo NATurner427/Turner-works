@@ -29,9 +29,9 @@ I collected US airline flights and performed exploratory data analysis and predi
 
 ## Anxious Modeling
 
-Since the outbreak of the Coronavirus, I've found myself stressfully working on modeling the outbreak of Ohio. When our understanding was very preliminary, I learned and implement a program that uses the Sucesptible, Infectious, Recovered, (SIR) model to forecast the outbreak. 
+Since the outbreak of the Coronavirus, I've found myself stressfully working on modeling the outbreak of Ohio. When our understanding was very preliminary, I learned and implemented the Sucesptible, Infectious, Recovered, (SIR) model to forecast the outbreak. 
 
-I also after seeing it done in the New York Times, wanted to model the interaction of people in a 2-d box getting each other infected. As a stepping stone, I modelled a gas in 2-d.
+I also, after seeing it done in the New York Times, wanted to model the interaction of people in a 2-d box getting each other infected. As a stepping stone, I modelled a gas in 2-d.
 
 ## Current and Future projects
 
