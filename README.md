@@ -2,10 +2,10 @@
 
 Here I've collected my various programming projects from my time at WSU and after. 
 
-My dissertation projects were written originally in C and I rewrote them in Python recently. Both are available here
-Those routines are
-
 ## Dissertation Projects
+
+My dissertation projects were written originally in C and I rewrote them in Python recently. Both are available here
+
 -a 1-d mass spring model that calculates eigenmodes and eigenvectors
 
 -a routine that given two legs of a tetrahedra, finds the orientation of the the other 2 legs in cartesian coordinates
