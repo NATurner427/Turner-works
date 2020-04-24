@@ -1,18 +1,18 @@
-#Collected Projects
+# Collected Projects
 
 Here I've collected my various programming projects from my time at WSU and after. 
 
 My dissertation projects were written originally in C and I rewrote them in Python recently. Both are available here
 Those routines are
 
-##dissertation projects
+## Dissertation Projects
 -a 1-d mass spring model that calculates eigenmodes and eigenvectors
 
 -a routine that given two legs of a tetrahedra, finds the orientation of the the other 2 legs in cartesian coordinates
 
 -a routine that takes raw beamline data collected at SSRL and processes to create a 2-d Resonant Inelastic X-ray Scattering intensity map
 
-##Data science projects
+## Data science projects
 
 Since my graudation I've learned and practiced projects in python3 with the focus on modeling and machine learning
 
@@ -27,13 +27,13 @@ I webscraped Carvanna's Columbus Ohio listings and performed linear regression t
 
 I collected US airline flights and performed exploratory data analysis and predicted delay times using machine learning.
 
-##Anxious Modeling
+## Anxious Modeling
 
 Since the outbreak of the Coronavirus, I've found myself stressfully working on modeling the outbreak of Ohio. When our understanding was very preliminary, I learned and implement a program that uses the Sucesptible, Infectious, Recovered, (SIR) model to forecast the outbreak. 
 
 I also after seeing it done in the New York Times, wanted to model the interaction of people in a 2-d box getting each other infected. As a stepping stone, I modelled a gas in 2-d.
 
-##Current and Future projects
+## Current and Future projects
 
 I have 2 projects I am currently working on.
 
