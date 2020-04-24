@@ -1,111 +1,42 @@
-# 3.06.20
+#Collected Projects
 
-## PERS
+Here I've collected my various programming projects from my time at WSU and after. 
 
-Another productive week. I finished my first project, the EDA of 2015 flights. I cleaned, analyzed plotted and exported data and figures. Continued to go to the gym 5 times again. Started counting calories and got my mom to do the same. I haven't heard back from Sue except to tell me she hasn't had time to look at my comments yet so thats still on the back burner. Instead of finishing my DISS project, I started my 2nd stepping stone project. I also took time reviewing linear regressions doing a couple datasets on pancreatic cancer and Boston real estate provided by kaggle and scikit learn respecitvely. Doing the linear regressions included doing train test splints both manually and via the scikit method, doing some feature selection, ridge regression, correlation maps, and coefficent results. 
+My dissertation projects were written originally in C and I rewrote them in Python recently. Both are available here
+Those routines are
 
-## AERO
+##dissertation projects
+-a 1-d mass spring model that calculates eigenmodes and eigenvectors
 
-DONE!
+-a routine that given two legs of a tetrahedra, finds the orientation of the the other 2 legs in cartesian coordinates
 
-## CARV
+-a routine that takes raw beamline data collected at SSRL and processes to create a 2-d Resonant Inelastic X-ray Scattering intensity map
 
- For my second project I wanted to use some webscraping to get my dataset instead of using prepackaged kaggle data like AERO. I used selenium to automate a chrome browser to access a website. I initially wanted to analyze Ricart, the largest car dealership in central Ohio. However there Robots.txt file disallowed any access, so my second choice was Carvana. Carvana is a company that allows you to shop online for a used car and the company will bring the car to you. My father used it to get his most recent car. I had selenium access the html tag that contained each cars info; year, brand, make, trim, milage, price, and shipping costs. I used beautiful soup to extract that info from the tag and put that info into a csv file. The selenium test had to work through 1700 pages of 20 cars each, and I ended up with about 34k rows of car info.
+##Data science projects
 
-The data was stored in the original csv as strings that were split into the relevant columns. I went through and cut out the text characters and converted the remaing numerical string into integers. I chopped off the car brands that I had less than 100 entries. I made categorical columns that identify the rows brand via a 1 in the relavent column and 0 in the rest. Then finally I recognized that the rows were repeating themselves. It seems Carvana artificially inflated their stated 34k inventory. I've sometimes noticed that with search querys repeating results. I used the *very* convenient pandas method .duplicated to find all the duplicate rows and then used ~ to negate it. Shockingly that chopped out 25k results!! And I was not lax with the .duplicated method making a row get flagged only if all the column values pulled from Carvana matched. That 8k remaining rows is not a lot of data to work with especially if its split up by brand, I may not have the chance to do that and will have to go without the brand cateogrical information.    
+Since my graudation I've learned and practiced projects in python3 with the focus on modeling and machine learning
 
-# 2.28.20 - weekly friday night update
+Many of the techniques here use clean data from online sources like haggle or provided by python packages like seaborn or scikit-learn.
+Techniques practiced were linear regressions, logistic regressions, K nearest neighbors, K means clustering, Support vector machines as well as trees and random forests.
 
-## PERS
+I've also practiced working with 'dirty' real world data in various projects.
 
-A productive week! I put in a couple hours everyday, went to the gym 5 times, and my second scitific paper came back with reviewer comments. My advisor and I addressed those reviewer comments and our paper will be published soon! That leaves 2 more papers in the pipeline and I can say my academic out put will come to a close. The first one is a place it could be out by the end of the year and the 2nd needs some extra work. That extra work is an opprotunity for data science!
+I did time series analysis using The Prophet on my brothers stock portfolio to predict the future performance of his choices (before the pandemic...)
 
-I wrote a set of programs in C when I was in school that took large 3-d and sometimes 4-d loops of data output from a X-ray synchrotron and extracted, processed and output the files ready to be plotted as 2-d intensity maps. The programs worked fine for what needed to be done, but with numpy and pandas I can make them more robust and efficent. This would hep with analysis for that 4th paper I plan to write. This would be a great data science project to show to more physics heavy data science positions.
+I webscraped Carvanna's Columbus Ohio listings and performed linear regression to predict the pricing of a car and plan to perform K means clustering to predict the model of the car.
 
-## AERO
+I collected US airline flights and performed exploratory data analysis and predicted delay times using machine learning.
 
-This project is a stepping stone project. I've learned the data science technical skills. I know I have the abilities that helped me succeed as a scientist. I have a couple of fun personal passion projects that can show I have the ability to make my own datasets, create my own analysis ideas and implement them etc. But this is a good inbetween project. A 'mundane' project. A 6 million row, 0.5 Gb of airline flight information from 2015. So far, I've cleaned it and processed it. And last night, I started planning and creating figures to explain the data graphically. Something thats going to get dataframe commands into the memory banks, matplotlib and seaborn graphing in the memory banks. Once I exhaust all my graph ideas for this data I'm going to put a pin in it. I'm going to want to come back to it and do some machine learning on it eventually.
+##Anxious Modeling
 
-## FUTR
+Since the outbreak of the Coronavirus, I've found myself stressfully working on modeling the outbreak of Ohio. When our understanding was very preliminary, I learned and implement a program that uses the Sucesptible, Infectious, Recovered, (SIR) model to forecast the outbreak. 
 
-This coming week, without the beneficial distraction of reviewer comments on my 2nd paper, I plan to finish the graphs for the AERO project and finish my DISS project. If theres more time in the week. I'll either start another project that focuses on webscraping or finish the AERO project. The hope is that in 2 weeks I'll have 3 projects finished. From there I'll have maybe one other project and then my two passion projects. Somewhere in there I have two other things to do, revamp my resume to focus on this data science and pretty up my github and make it public!
+I also after seeing it done in the New York Times, wanted to model the interaction of people in a 2-d box getting each other infected. As a stepping stone, I modelled a gas in 2-d.
 
-# 2.21.20 - weekly friday night update
+##Current and Future projects
 
-## PERS
+I have 2 projects I am currently working on.
 
-It's been a week and I've accomplished little and that is eating at me. Saturday, I spent the day working on an evaluation test for the Metis bootcamp. Sunday and Monday I was in Cleveland with family. Tuesday and Wednesday I recovered from my time with the family. Thursday I finally starting working on things again. I practiced my git and github, markdown, and commandline input. This was all in relation to the Metis bootcamp. I had an interview as a final step Thursday morning, and they accepted me. If I want, I can take a 12 week program that 'gurantees' me a job in data science. That it is not a certainty and the bootcamp costs $17k I currently have 1.7k in savings is worrying. I would be able to take out a personal loan that I would only have to pay interest on (about 150 dollars) until 2 months after th program is completed at which point the cost increases to about 400 a month. If I do get that 'guranteed' job I'll be fine but if I don't promptly find a job I'll be in a bad spot. Also, its very possible for me to get into a data science job with my current skill set. I just need to spend sometime working on projects I can present to hirers to prove my ability. This would only cost time, but If I spend 3 months trying to build my projects and getting hired on my own, I run the risk of being in the same place in 3 months and probably contemplating Metis (and its cost) all over again, with less savings. 
+I want to use Natural Language Processing to analyze my music playlist. I've been using Google Play Music for close to 10 years and have all my songs playlists and listening info on the app. I've extracted that info using an unoffical API and saved it to a csv file.
 
-I have to make a decision in a week. I haven't been this indesicive on a choice in my life, I swing back and forth between deciding on the two options hourly. I spend a day like today working on a project and feeling good that I (mostly) have it working, but then I have the thought of 'nobody cares about this project' and its true. Its mostly for me to practice my python, before I dive in to the actual projects I want to do. If I do decide to not go to Metis, I'm going to scrim there sylabus and follow there topics on my own at my own pace. I could do this, and if I still don't find any work go to Metis anyway, but then the content will be very repetitive. But that is what I'm leaning towards I think? Just writing that lead to the same indecision that maybe I should just go through the program.
-
-## DISS
-
-I started the 2nd dissertation program transcription to python today. This was a model of a mass-spring system with periodic poundary conditions. This is a classic solid-state/physics problem that actually realed well to my 1-d pt chains. The work day went very well. Really the only sticking point was where I noticed that the way I had done it in C (working through arrays element by element with iteration) could be improved on with python. with the use of numpy I could work with entire arrays of elements in 1 line of code. The challenge was changing my thinking that way. to take a vector and recognize each of these needs to be operated on 'this' way and implementing it. It got better as the work day went on. at various points to allow me to work on particular elements in 2D array in a particular way I used np.ndenumerate to extract the i,j indices of the matrices I was working with. certain rules decided what went in each element (i==j,i==j-1,i-1==j, etc). I suspect there may be a more elogant way to do this, a numpy function that conditionally replaces element values based on there index. I could find function np.where that did apply the conditional statement but only considered values not their index (that I could see). 
-
-I started with the monoatomic case. This is a system that has a single mass and spring constant. This results in a single accoustic branch when you plot eigenvalue by wavevector. I went on to the diatomic case which includes two masses and one spring constant. This creates one accoustic branch and one optical branch. The one issue I accepted to hold off on for the night was a issue that was also in the C code. the way I create the mode plot of the accoustic and optical branch caussing a graphing error. I should be able to fix it with a quick x value shift.
-
-## FUTR
-
-I think I'll put a pin on the two projects I did last week and reset them in the mindset of being Metis projects. Metis gets you 5 projects at the end of 12 weeks that checks of some boxes. If the two projects I did last week can fit those Metis projects in skills learned and content than that 2 of 5 already started. If not than I'm still at 0 of 5 projects that I have started on. Coupled with me taking the time to do these transcriptions and I feel like I'm burning time. Not that I have anything pressing to accomplish. But I am getting anxious to start a career and make some money! The hope is that I get a lot more done this week than last, but my brother and nephew are coming into town. Something I should be excited for, but the idea of giving up another day so quickly bugs me to some degree.  
-
-# 2.14.20 - weekly friday night update
-
-## PERS
-
-It's always difficult to punch the clock when your mind is chugging along about half dozen projects, but I need to know when to say stop and document. It's been a nice change to have so much time since I quit my part time job. I thought this little retail/manual labor 10-15 hr a week job would be perfect to help pay for food and gas while I took time of to study and rest after my PhD. It was a nice experience of the grass is greener, came in and did the job they asked of me as well as I thought it should be done and wowed my managers in the process (I think I wowed them). As the holidays approached they gave me more and more hours, pushing 30 a week for about a month. I didn't poo-poo that too much since this was a time when I was happy to get some extra money and I told myself the times would return to that minimal level when the holidays ended. But I seemed to prove my ability and they kept me at about 20+, and at that point I knew I needed to just quit. 
-
-Another valuable lesson I learned was the 'flux' of work effort that can occur in a job. When I started working there, it was me, one other guy also newly hired, and a manager with 11 years experience, recieving a truck at 4am, unloading it, breaking down the pallets of stock, and restocking the store. The other new guy quit without notice within a month. The manager put in her two weeks soon after I joined and so was gone around the same time. They then got a newly hired asst. manger and their custodial worker to replace them. I as an individual had to work harder so that the same 'morning truck reciving' crew accomplished the same tasks. I thought, eventually they'll hire a new helper and manger with more ability and it will go back to normal. 
-
-The custodial worker recognized I was a dilligent worker. His breaks got longer and more frequent, leaving earlier and coming in later. Part of me didn't blame him, he signed up to clean and this was hard physical work. As he slowed I hastened. A new manger was hired but he was inexperienced, his first time in a position like this. There were certain tasks that the manger needs to do before the store opens outside of recieving the truck and helping stock the shelves. His inexperience meant he was much slower at that opening the store work. I had to work harder, and I did. The manager commented on how slow the custodial worker was often, and I agreed with him saying I could do what he did much faster. 
-
-Eventually, the custodial worker quit, no call no showed one morning and left me by myself to do the entire job with the manager who had to work on other things. I thought, this is terrible, and it was the new normal. Despite the continued exposure to the job, the new manager never became much quicker at the paperwork tasks he had to excuse himself to work on, nor worked even at the level of speed that the custodial worker did and I ran myself ragged twice a week to accomplish as much as I could, which wasn't good enough for the main managers of the store. So they gave me more hours to work the rest, expecting the same rate of work effort I gave on those days with trucks, because they knew I was capable of it. New people were hired and I was promised they would help with the truck, giving me some hope that these haggerd mornings would end, but a month after the hires, only 1 came in once to help at 4am and otherwise I was left to work it myself. 
-
-The lesson I learned is that everyone else saw that I was willing and able to pick up the slack of others and what that informed them was that they didn't need to pull as hard. The custodial saw I worked hard, so he didn't have to. The manger saw I worked hard so he could spend more time on the paperwork. The main mangers saw I worked hard and therefore put no effort into easing my workload. This went on until I said enough was enough and quit. 
-
-Is this a lesson for a worker to not work as hard as they can? I don't know, I personally would get bugged if things were left half finished when my shift was up. It bothered me and so I would work harder to make sure they got done. If I didn't, then I would be annoyed. In the same vein, if I chose to take more breaks or work at a slower rate, I think I would get bored. Working hard has always been a remedy for a slow moving clock in my experience. 
-
-So really this is a lesson for a manager. They had a hard working employee who was *happy* to wake up at 3:30am to move thousands of pounds of stock for them and they used up his goodwill and he quit. The manager needs to recognize that in daily work life, see where people are pushing and making sure they don't push for too long. Recognize why they are putting in that extra effort and try to balance it better. Whether that means reprimanding slow workers or slow managers or telling the worker 'hey the work isn't going anywhere don't burn yourself out' finding new employees to help them or even coming in yourself to help a little. 
-
-I did my grass is greener experience of working a bottom rung part time job but I'm ready to get into a position that is more in line with my skillset. 
-
-I put in one job appilcation. I am applying for these data scientist jobs that I think I would be a good fit for, but I do not have those personal portfolio projects that I assume hirers are looking for. These projects are my solution to this. I am a bit gun shy to apply to positions without having that critical component complete. This week I worked on 3 projects. 
-
-## GOMU 
-
-I started work on my personal music playlist project. Google play music has been my streaming service for about 8 years now. I orginally signed up for it becuase it allowed mee to upload my personal music library to there service and have access to it from anywhere, any device. I was/am an avid supporter of DIY local music, physical media, bandcamp, etc. so it was great to be able to import my library and be able to access it. Since then, I've used google play music to compile hundreds of playlists that I've made for personal use, for friends, and for my radio show. Google music also allowed a pretty painless 'add to library' button on their service by which if you liked an album you could put it in your own library rubbing shoulders with the music you did own. This is a nice way to centralize all music you enjoy but if you were ever to cancel your subscription, those tracks would not be kept. 
-
-Now in the present day most streaming sites music libraries are impressively exhaustive and my own time to find bands has diminished meaning that the offered libraries are about 99% capable of getting me the music I want and other streaming services have caught up with googles ability to upload your personal music for that last 1%. Spotify has for a long time offered a very cheap $5/month deal for hulu and itself that was always enticing for me but I could never leave google because it retained all my playlists and there was no feature that allowed you to export them.
-
-So, one of the projects I knew I wanted to do was to extract this info. And while brainstorming I decided, I might as well build a SQL database for do some analysis on my music taste, see what I could find out about my listening habits.
-
-This week I started with an attempt to webscrape the info from google play music account. This would be my first attempt at web scraping. I installed beautiful soup and selentium but was quickly stopped by googles ability to read my activity as bot behavior. This lead to me being unable to get into my account to extract the info and after a few hours of trouble shooting solutions I deemed it no longer worth my time to try and go that route.
-
-After some googling I came across an unofficial API written by Simon Weber (https://github.com/simon-weber/gmusicapi) that allowed me to access my google library via python! Figuring out the methods and output I wrote a small python script that pulled all the info I was interested in and placed it in a text file. Then I converted that txt file to a .CSV. If theres one other thing I'd like to do with this script, it would be to have the script directly putput a csv, but I reached for my more often used output of .write/.read before considering the csv library. 
-
-From hear I can build my SQL database and have some fun with my info, listening count, genre, process the content of songs/album/band names.
-
-
-## HWHI
-
-The Houston Astros were caught cheating in the 2017 MLB season. If the details interest you can find them all over the internet but here are some poingnant particulars. If a batter is guessing that the next pitch hes going to see is an offspeed, 80 mph pitch hes going to prime himself with the timing to hit a ball thats coming from the pitcher at that speed. If the pitcher ends up throwing a 100 mph dart the batter can end up just staring as the ball flys by and concede welp, fooled me! Plenty of at bats you'll see this, a strike followed by a smile and nod from the batter as if to say alright, you got me, I guessed wrong! Or the opposite case when the batter assumes a fast ball is coming and ends up swinging before the ball even reaches the plate. Or a third case when the batter swings at a ball they expect to connect with but the pitcher throws a breaking ball that ends up in the opposite batters box, a foot from the strike zone! Sometimes these batter guesses are called 'sitting' a batter just watches a pitch wiz by? he was sitting fastball, meaning he got himself and all his muscle memory primed to act and increase his chances of a hit if he guessed right and gets a fastball pitched. 
-
-Now, what if the batter **knew** what pitch was coming? **Knew** how to sit for every pitch? Thats the 2017 Astros. A live feed of the catcher, relaying signals to the pitcher to decide what pitch to throw, was sent into the Astros dugout where players would bang on a trashcan to let the batter now what pitch was coming. You can see how this would increase a batters chances to make contact with the ball, right? There are other variables of course, knowing what pitch was coming doesn't gurantee a hit for every batter but it reduces the number of variables the batter has to consider to get a ball in play, which can only help. 
-
-One industrious baseball fan (an astros fan, no less) cataloged all the heard bangs over the course of the 2017 season and gave the data up for all to see here (). This data shows who was recieving bangs and the 'bang density' how many bangs a game where showing. The one issue is that a bang or two bangs signaled certain pitches, but 'no bang' or the absence of a bang signified a third type of pitch. That means that a certain sample of 'cheats' are not shown in this data, since they can't be recognized. 
-
-The bangs, according to both the MLB and the fan, taper off in the 2018 season. But the question I and many others have asked is what incentive do the Astros have to stop cheating after their actions lead to them winning a world series, with no one catching on? When the post season crowds got to loud for the Astros to hear the banging, they devised a new system where there bullpen catched would be fed which pitches were coming and put his hands up on the railing of the outfield accordingly. The Astros are capable of making other systems to continue cheating. So when the banging stopped were they simpling changing their methods?
-
-2 other schemes have been proposed. 
-
-The first was whistling. The Yankees and Nationals orginizations have both challenged that the Astros switched to whistling and that is how they signaled the pitches in the 2019 season. If someone can catalog the bangs then I can catalog the whistles. Their are 2 distinct whistles I and others heard often when watching games against the astros. A 'charge' whistle and a 'bird pew' whistle.
-
-Surprisingly MLB provides every game of baseball played from 2009 onwards on Youtube. By typing in the releevant info with a certain syntax you can watch a baseball broadcast in its entirety. If you're interested what that format is check this reddit post(). Sadly, they haven't uploaded any 2019 games, which is the season where the Yankees and Nationals openly accused the team of using this whistle scheme. But if the whistle scheme had its origin in the previous 162 games, I shoulw be able to find it.
-
-The plan is to extract audio from these broadcasts, find examples of the two whistles, identify there spectral properties and scan the remaining audio for other instances, timestamping there moment in the game. From there I would check visually the situation and use a site like baseball savant to pull up pitch information and outcome and catalog the results. 
-
-Currently I've gotten as far as extracting the audio. The next will be to find a way to fingerprint the whistles.
-
-## DISS
-
-I had some projects I wrote in C for work in my dissertation. To improve my python and update those programs, I decided to rewrite them. The first one I rewrote was a program that takes two vectors that represent two legs of a tetrahedra and finds the remaining two legs. A more in-depth description can be found in /python/dissertation/tetra completer. Notably, I improved the code by implementing numpy and the other correction is to introduce a 3-d visulizer, if possible.
-
+The other project, which I consider my personal capstone, is to use Convolutional Neural Networks to parse whistles from crowd noise. There is a suspition that The Houston Astros cheated using whistles to alert batters of the pitch being thrown in previous years of Major League Baseball. Every game of the 2018 season is available on Youtube. I'll pull the pitch count and audio from these games and then using a routine similar to previously published work on birdcalls, find correlation between whistles, pitches, and outcomes. I will also use the Cleveland Indians, a team not accused of cheating, as a baseline.
