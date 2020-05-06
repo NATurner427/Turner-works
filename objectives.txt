@@ -1,10 +1,9 @@
 Linear and non-linear statistical modeling
-Time series and longitudinal data analysis
-Modern machine learning techniques
+longitudinal data analysis
+
 Statistical or econometric theory
 Large-scale optimization
 
-natural language processing
 Tableau
 Hadoop
 Ab Initio
