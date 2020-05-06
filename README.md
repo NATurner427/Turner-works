@@ -23,7 +23,7 @@ I've also practiced working with 'dirty' real world data in various projects.
 
 I did time series analysis using The Prophet on my brothers stock portfolio to predict the future performance of his choices (before the pandemic...)
 
-I webscraped Carvanna's Columbus Ohio listings and performed linear regression to predict the pricing of a car and plan to perform K means clustering to predict the model of the car.
+I webscraped Carvanna's Columbus Ohio listings and performed linear regression to predict the pricing of a car and attempted some K means clustering on pricing and milage to label the year.
 
 I collected US airline flights and performed exploratory data analysis and predicted delay times using machine learning.
 
