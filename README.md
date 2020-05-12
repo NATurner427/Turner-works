@@ -37,6 +37,6 @@ I also, after seeing it done in the New York Times, wanted to model the interact
 
 I have 2 projects I am currently working on.
 
-I want to use Natural Language Processing to analyze my music taste. I've been using Google Play Music for close to 10 years and have all my songs, playlists, and listening info on the app. I've extracted that info using an unoffical API and saved it to a csv file.
+I want to use Natural Language Processing to analyze my music taste. I've been using Google Play Music for close to 10 years and have all my songs, playlists, and listening info on the app. I've extracted that info using an unoffical API and saved it to a csv file. I'm currently pulling lyrics from the 18k+ songs in my library using Selenium and beautiful soup to webscrape from Genius.com. Once this is done I'm looking forward to making my own website where I will create a dashboard analyzing the text of these songs.
 
 The other project, which I consider my personal capstone, is to use Convolutional Neural Networks to parse whistles from crowd noise. There is a suspicion that The Houston Astros cheated using whistles to alert batters of the pitch being thrown in previous years of Major League Baseball. Every game of the 2018 season is available on Youtube. I'll pull the pitch count and audio from these games and then using a routine similar to previously published work on birdcalls, find correlation between whistles, pitches, and outcomes. I will also use the Cleveland Indians, a team not accused of cheating, as a baseline.
