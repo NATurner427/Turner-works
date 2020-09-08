@@ -41,8 +41,8 @@ I also, after seeing it done in the New York Times, wanted to model the interact
 
 Currently considering my next project. 
 
-I've finished analyzing the astros home games for the 2018 season for thw whistling project and it was tiring, I think as a palette cleanser I want to do something more mainstream and practical before I return to the Astros and see about training an AI to find whistles for me. I'm considering credit card fraud or ad clicking or customer churn. Unlike my last 3 projects where I culled my own data from the internet this project will likely be using a prepared data set from kaggle.
+I've finished analyzing the astros home games for the 2018 season for the whistling project and it was tiring. I think as a palette cleanser I want to do something more mainstream and practical before I return to the Astros and see about training an AI to find whistles for me. I'm considering credit card fraud or ad clicking or customer churn. Unlike my last 3 projects where I culled my own data from the internet this project will likely be using a prepared data set from kaggle or elsewhere.
 
-A second project percalating in my mind is simply a fun challenge focusing on baseball physics. It would be fun to create a pitch modeler set the spin rate, spin axis, speed and see the flight path. Use a 3-d modeling package to visualize it. Make it as complex as I want with atmospheric and weather effects.
+A second project percalating in my mind is simply a fun challenge focusing on baseball physics. It would be fun to create a pitch modeler; set the spin rate, spin axis, speed and see the flight path. Use a 3-d modeling package to visualize it. Make it as complex as I want with atmospheric and weather effects.
 
 Finally, more long term, two areas I want to focus on learning more that seem highly saught after are hadoop/spark and tableau/power BI. I'm going to want to do a project that incorporates these or use an old project and add these skills to them.
