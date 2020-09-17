@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
 from IPython.display import clear_output
 
 def display_board(board):
@@ -13,6 +19,8 @@ def display_board(board):
     print(f' {board[0]} | {board[1]} | {board[2]}')
     print('   |   |   ')
 
+
+# In[2]:
 
 
 def player_input():
@@ -37,9 +45,14 @@ def player_input():
     print(f'Player two will play as {player2}') 
 
 
+# In[3]:
+
+
 def place_marker(board, marker, position):
     board[position-1]=marker
 
+
+# In[4]:
 
 
 def win_check(board, marker):
@@ -65,6 +78,8 @@ def win_check(board, marker):
     return False
 
 
+# In[5]:
+
 
 import random
 
@@ -79,9 +94,14 @@ def choose_first():
         onefirst=False
 
 
+# In[6]:
+
+
 def space_check(board, position):
     return board[position-1] ==' '
 
+
+# In[7]:
 
 
 def full_board_check(board):
@@ -89,6 +109,9 @@ def full_board_check(board):
         if x == ' ':
             return False
     return True
+
+
+# In[8]:
 
 
 def player_choice(board):
@@ -105,6 +128,9 @@ def player_choice(board):
                 check = True
         else:
             print('please pick a number between 1 and 9')
+
+
+# In[9]:
 
 
 def replay():
@@ -124,6 +150,10 @@ def replay():
             again = False
 
 
+# In[10]:
+
+
+import random
 import time
 
 again = True
@@ -183,6 +213,10 @@ while again==True:
         again = False
         break
 
+
+# ## Good Job!
+
+# In[ ]:
 
 
 
