@@ -46,3 +46,5 @@ I've finished analyzing the astros home games for the 2018 season for the whistl
 A second project percalating in my mind is simply a fun challenge focusing on baseball physics. It would be fun to create a pitch modeler; set the spin rate, spin axis, speed and see the flight path. Use a 3-d modeling package to visualize it. Make it as complex as I want with atmospheric and weather effects.
 
 Finally, more long term, two areas I want to focus on learning more that seem highly saught after are hadoop/spark and tableau/power BI. I'm going to want to do a project that incorporates these or use an old project and add these skills to them.
+
+I've decided with the election going on a fun project would be to build a Ohio poll dashboard on tableau. Could be quite fun to build complexity into. report historical results, forecast 2020 election results, looking into demographics by county and by congressional district. Focus will be on playing around with statistics as much as possible, building a SQL database for the data and I'll be playing with and using tableau to report it all
